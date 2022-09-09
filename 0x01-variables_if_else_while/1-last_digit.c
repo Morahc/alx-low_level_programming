@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* main -  prints different text depending on
+/* 
+ * main - prints different text depending on
  * the last value of n 
  * Return 0 if exited properly
  */
