@@ -2,7 +2,7 @@
 
 /*
 * main - prints all single digit base 10 number using putchar
-* Returns 0 on succes
+* Returns: 0 on succes
 */
 
 int main(void)
