@@ -4,10 +4,10 @@
 * main - prints all single digit base 10 number
 * Return: 0 on succes
 */
-
 int main(void)
 {
 	int i;
+	
 	for (i = 0; i <= 9; i++)
 	{
 		printf("%d", i);
