@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
- * main - prints either is positive, is negative or is zero
- * depending on n.
- * Return: 0 if exited properly, non-zero otherwise
+/**
+ * main - assigns a random number to int n everytime
+ * it executes, and prints it
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
