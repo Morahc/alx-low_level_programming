@@ -1,0 +1,19 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * natural - computes the sum of all the multiples of 3 or 5
+ * below 1024, followed by a new line.
+ */
+void natural(void)
+{
+	int i;
+	int sum = 0;
+
+	for (i = 0; i < 1024; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
+	}
+	printf("%d\n");
+}
