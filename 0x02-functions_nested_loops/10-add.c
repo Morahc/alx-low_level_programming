@@ -2,7 +2,8 @@
 
 /**
  * add - adds two integers
- *
+ * n1 - integer
+ * n2 - integer
  * Return: sum of two integers
  */
 int add(int n1, int n2)
