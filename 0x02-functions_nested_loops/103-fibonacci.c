@@ -7,20 +7,23 @@
  */
 int main(void)
 {
-	int i = 0;
-	int j = 1;
-	int k = 2;
-	int sum = 2;
-	int arr[] = {1, 2};
+	int i;
+	unsigned long int j, k, next, sum;
 
-	while (k < 34)
+	j = 1;
+	k = 2;
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
 	{
-		arr[k] = arr[i] + arr[j];
-		if (arr[k] % 2 == 0 && arr[k] < 4000000)
-			sum += arr[k];
-		i++;
-		j++;
-		k++;
+		if (j < 4000000 && (j % 2) == 0)
+		{
+			sum = sum + j;
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
+	printf("%lu\n", sum);
 	return (0);
 }
