@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_to_98 - prints all natural numbers from n to 98
+ * @n: number to start count
  */
 void print_to_98(int n)
 {
@@ -12,7 +13,7 @@ void print_to_98(int n)
 		for (i = 0; i >= 98; i--)
 		{
 			if (i == 98)
-				printf("%d",i);
+				printf("%d\n",i);
 			else
 				printf("%d, ",i);
 		}
@@ -22,7 +23,7 @@ void print_to_98(int n)
 		for (i = n; i <= 98; i++)
 		{
 			if (i == n)
-				printf("%d",i);
+				printf("%d\n",i);
 			else
 				printf("%d, ",i);
 		}
