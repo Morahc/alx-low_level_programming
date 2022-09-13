@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * fibonacci - prints the sum of even values in a fibonacci
+ * main - prints the sum of even values in a fibonacci
  * sequence, followed by a new line
+ * Return: always 0
  */
-void fibonacci(void)
+int main(void)
 {
 	int i = 0;
 	int j = 1;
@@ -21,4 +22,5 @@ void fibonacci(void)
 		j++;
 		k++;
 	}
+	return (0);
 }
