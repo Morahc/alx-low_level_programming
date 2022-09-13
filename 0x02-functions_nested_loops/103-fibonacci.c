@@ -13,7 +13,7 @@ int main(void)
 	int sum = 2;
 	int arr[] = {1, 2};
 
-	while (k < 38)
+	while (k < 34)
 	{
 		arr[k] = arr[i] + arr[j];
 		if (arr[k] % 2 == 0 && arr[k] < 4000000)
