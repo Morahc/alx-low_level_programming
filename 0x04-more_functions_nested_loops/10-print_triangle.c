@@ -29,4 +29,5 @@ int main(int size)
 			_putchar('\n');
 		}
 	}
+	return (0);
 }
