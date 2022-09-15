@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - prints a triangle, followed by a new line.
- * @size: size of triangle
- * Return: Always 0
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
  */
-int main(int size)
+void print_triangle(int size)
 {
 	if (size <= 0)
 	{
@@ -29,5 +28,4 @@ int main(int size)
 			_putchar('\n');
 		}
 	}
-	return (0);
 }
