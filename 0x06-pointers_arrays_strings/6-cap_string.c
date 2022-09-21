@@ -1,26 +1,34 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
  * cap_string - capitalizes everey word of a string
- * @c: string to capitalize
+ * @s: string to capitalize
  *
- * Return: capitalized string
+ * Return: the capitalized string
  */
-char *cap_string(char *c)
+char *cap_string(char *s)
 {
-    int i = 0;
+	int i, j;
 
-    while (c[i] != '\0')
-    {
-        if (i == 0)
-        {
-            c[i] = toupper(c[i]);
-        }
-        else if (c[i-1] == ' ')
-        {
-            c[i] = toupper(c[i]);
-        }
-    }
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 
-    return (c);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
+		{
+			if (s[i] == spe[j])
+			{
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				{
+					s[i + 1] -= 32;
+				}
+			}
+		}
+	}
+
+	return (s);
 }
