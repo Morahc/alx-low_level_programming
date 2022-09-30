@@ -8,19 +8,14 @@
  *
  * Return: product of number on success, otherwise 1
  */
-int main(int argc, char *argv[])
+int main(int argc, char  *argv[])
 {
-	int product;
-
-	if (argc <= 1)
+	if (argc == 3)
 	{
-		printf("Error");
-
-		return (1);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-
-	product = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", product);
-
-	return (0);
+	else
+		printf("Error\n");
+	return (1);
 }
